@@ -1,0 +1,30 @@
+@prefix admin: <http://webns.net/mvcb/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<> a foaf:PersonalProfileDocument ;
+    admin:errorReportsTo <mailto:leigh@ldodds.com> ;
+    admin:generatorAgent <http://www.ldodds.com/foaf/foaf-a-matic> ;
+    foaf:maker <#me> ;
+    foaf:primaryTopic <#me> .
+
+<#me> a foaf:Person ;
+    foaf:depiction <https://prnt.sc/w7diav> ;
+    foaf:family_name "Velkovski" ;
+    foaf:givenname "Jovan" ;
+    foaf:knows [ a foaf:Person ;
+            rdfs:seeAlso <https://raw.githubusercontent.com/vavramovski/foaf/main/foaf.ttl> ;
+            foaf:mbox <mailto:viksa.1998@hotmail.com> ;
+            foaf:name "Viktor" ],
+        [ a foaf:Person ;
+            rdfs:seeAlso <https://raw.githubusercontent.com/becutandavid/FOAF/main/foaf.ttl> ;
+            foaf:mbox <mailto:becutandavid@gmail.com> ;
+            foaf:name "David" ] ;
+    foaf:mbox <mailto:velkovskijovan1@gmail.com> ;
+    foaf:name "Jovan Velkovski" ;
+    foaf:nick "Joco" ;
+    foaf:phone <tel:071234567> ;
+    foaf:schoolHomepage <https://finki.ukim.mk/> ;
+    foaf:title "Mr" ;
+    foaf:workInfoHomepage <https://iwconnect.com/> ;
+    foaf:workplaceHomepage <https://iwconnect.com/> .
